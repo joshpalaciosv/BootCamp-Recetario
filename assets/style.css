@@ -1,0 +1,160 @@
+:root{
+
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
+}
+
+
+.seccion-cabecera{
+    display: flex;
+    align-items: center;
+    flex-flow: column nowrap;
+    width: 100%;
+    /* width: 700px; */
+    justify-content: center;
+    padding-bottom: 15px;
+}
+
+.cabecera-titulo h2{
+    text-align: center;
+    font-size: 15px;
+    padding-top: 5px;
+    padding-bottom: 6px;
+}
+
+.cabecera-imagen{
+    position:relative;
+   /*  flex: 0 0 150px; */
+}
+
+
+.cabecera-imagen img{
+    width: 100%;
+    
+   /*  width: 100%; */
+    height: 130px;
+    border-radius: 10px;
+    object-fit: cover; 
+    padding-top: 7px;
+    padding-bottom: 7px;
+    object-position: 50% 65%;
+}
+
+.cabecera-platillo h1{
+    font-size: 16px;
+}
+
+.cabecera-especificaciones{
+    display: flex;
+    justify-content: space-around;
+}
+
+.cabecera-cajita{
+    background-color: #e0dbdb;
+    padding: 10px 16px 10px 16px;
+    border-radius: 15px;
+    border: 4px solid white;
+} 
+
+
+.cabecera-cajita-contenido{
+    display: flex;
+    flex-flow: column nowrap;
+    padding-right: 35px;
+}
+
+.cabecera-cajita-titulo{
+    font-size: 11px;
+}
+
+.cabecera-cajita-tiempo{
+    font-weight: bold;
+    font-size: 15px;
+    padding-top: 5px;
+}
+
+
+/* .cabecera-cajita{
+    background-color: #b5adad;
+    padding: 25px 40px 25px 40px;
+    border-radius: 15px;
+    border: 8px solid white;
+   
+} */
+
+.seccion-principal{
+    
+
+    display: flex;
+    align-items: center;
+    flex-flow: column nowrap;
+    width: 100%;
+    /* width: 700px; */
+    justify-content: center;
+    padding-bottom: 15px;
+    padding-left: 10px;
+}
+
+.seccion-ingredients{
+    padding-top: 15px;
+    text-align: left;
+    object-fit: cover;
+}
+
+.seccion-ingredients ul li{
+    list-style: none;
+    padding-top: 10px;
+    font-size: 12px;
+}
+
+@media(min-width:768px){
+
+
+    .cabecera-titulo h2{
+        font-size: 20px;
+        padding-top: 8px;
+        padding-bottom: 10px;
+    }
+
+    .cabecera-imagen img{
+        width: 900px;
+        height: 300px;
+    }
+
+    .cabecera-platillo h1{
+        font-size: 20px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+    }
+
+    .cabecera-cajita{
+        padding: 20px 65px 20px 65px;
+        
+    }
+
+    .cabecera-cajita-contenido{
+        padding-right: 80px;
+    }
+
+    .cabecera-cajita-titulo{
+        font-size: 17px;
+    }
+
+    .cabecera-cajita-tiempo{
+        font-size: 25px;
+    }
+
+    .seccion-principal{
+        width: 100%;
+    }
+
+    .seccion-ingredients ul li{
+        font-size: 18px;
+    }
+
+}
